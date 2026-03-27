@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CleanCity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🌱 CleanCity</h1>
+<p>Report Garbage, Keep Our City Clean!</p>
+
+<div class="form">
+    <input type="text" id="location" placeholder="Enter location">
+    <textarea id="desc" placeholder="Describe issue"></textarea>
+    
+    <input type="file" id="image" accept="image/*" onchange="previewImage()">
+    <img id="preview" src="" style="display:none; width:150px; margin-top:10px;">
+    
+    <button onclick="submitReport()">Submit Report</button>
+</div>
+
+<h2>📋 Reports</h2>
+<div id="reports"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
